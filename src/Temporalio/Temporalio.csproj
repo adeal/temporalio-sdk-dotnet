@@ -84,7 +84,7 @@
   <!-- Pack the runtime if BridgeLibraryRoot property set -->
   <Target Name="PackBridgeRuntimes" BeforeTargets="DispatchToInnerBuilds" Condition="'$(BridgeLibraryRoot)' != ''">
     <ItemGroup>
-            <Content Include="Bridge/target/debug/libtemporal_sdk_bridge.so">
+            <Content Include="Bridge/target/release/libtemporal_sdk_bridge.so">
               <PackagePath>runtimes/linux-x64/native/libtemporal_sdk_bridge.so</PackagePath>
             </Content>
       <!--      <Content Include="$(BridgeLibraryRoot)/linux-arm64-bridge/libtemporal_sdk_bridge.so">-->
